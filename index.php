@@ -3,8 +3,37 @@
     include './header.php';
 ?>
 
+ <?php
+
+  class Pokemon{
+   public $nome;
+   public $poder;
+   public $foto;
+  }
+
+    $pokemon1 = new Pokemon();
+    $pokemon1->nome = "Pikachu";
+    $pokemon1->poder = "Poder Eletrizante";
+    $pokemon1->foto = "";
+    
+    $pokemon2 = new Pokemon();
+    $pokemon2->nome = "Pikachu";
+    $pokemon2->poder = "Poder de Fogo Ardente";
+    $pokemon2->foto = "";
+   
+    $pokemons= [
+      $pokemon1,
+      $pokemon2
+    ];
+    
+
+ ?>
+
   <div class="container">
     <div class="row">
+      <?php   foreach ($pokemons as $key => $pokemon) { ?>
+      <?php}
+      ?>
       <!-- pikachu -->
       <div class="col-12 col-md-4 col-lg-3 p-3">
         <div class="card  shadow" style="width: 18rem;">
